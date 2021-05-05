@@ -283,8 +283,9 @@
             align-content: space-between;
         }
 
-        .footer-logo img {
-            margin: 0 auto;
+        .footer-logo {
+            display: flex;
+            justify-content: center;
         }
     </style>
 
@@ -389,10 +390,10 @@
                 </div>
                 <!-- button -->
                 <div class="btn-toolbar my-5" role="toolbar" aria-label="Toolbar with button groups">
-                    <button type="button" class="btn btn-secondary">1</button>
-                    <button type="button" class="btn btn-secondary">2</button>
-                    <button type="button" class="btn btn-secondary">3</button>
-                    <button type="button" class="btn btn-secondary">4</button>
+                    <button type="button" class="btn btn-secondary p-0">1</button>
+                    <button type="button" class="btn btn-secondary p-0">2</button>
+                    <button type="button" class="btn btn-secondary p-0">3</button>
+                    <button type="button" class="btn btn-secondary p-0">4</button>
                 </div>
             </div>
         </section>
@@ -758,30 +759,38 @@
 
     </div>
     <!-- eighth part-footer -->
-    <div class="footer-img">
-        <img src="./images/footer-img.png" alt="">
-    </div>
-    <!-- info -->
-    <div class="container my-5">
-        <div class="row">
-            <div class="col-lg-6 copyright">
-                <p>
-                    Copyright © 2017. All rights reserved.
-                </p>
+    <div class="footer">
+        <div class="footer-img">
+            <img src="./images/footer-img.png" alt="">
+        </div>
+        <!-- info -->
+        <div class="container my-5">
+            <div class="row">
+                <div class="col-lg-6 copyright">
+                    <p>
+                        Copyright © 2017. All rights reserved.
+                    </p>
+                </div>
+                <ul class="col-lg-6 nav justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#">網站使用條款</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">隱私權政策</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">免責聲明</a>
+                    </li>
+                </ul>
             </div>
-            <ul class="col-lg-6 nav justify-content-end">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">網站使用條款</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">隱私權政策</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">免責聲明</a>
-                </li>
-            </ul>
+        </div>
+        <!-- footer-logo -->
+        <div class="footer-logo mb-5">
+            <img src="./images/footer-logo.png" alt="">
         </div>
     </div>
+
+
 
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
